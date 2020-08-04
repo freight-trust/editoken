@@ -1,0 +1,28 @@
+{
+  "name": "editoken",
+  "version": "1.0.0",
+  "description": "$EDI Token",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freight-trust/editoken.git"
+  },
+  "keywords": [
+    "edi",
+    "erc20",
+    "ethereum",
+    "token"
+  ],
+  "author": "SEE LICENSE",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/freight-trust/editoken/issues"
+  },
+  "homepage": "https://github.com/freight-trust/editoken#readme",
+  "dependencies": {
+    "etherscan-api": "^10.0.5"
+  }
+}
