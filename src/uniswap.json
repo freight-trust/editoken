@@ -1,0 +1,29 @@
+{
+  "name": "Freight Trust Network",
+  "timestamp": "1596532974",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x79C5a1Ae586322A07BfB60be36E1b31CE8C84A1e",
+      "decimals": 18,
+      "name": "Freight Trust Network",
+      "symbol": "EDI",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x79C5a1Ae586322A07BfB60be36E1b31CE8C84A1e/logo.png",
+      "tags": [
+        "logistics",
+        "supply chain",
+        "electronic data interchange",
+        "protocol",
+        "freight"
+      ]
+    }
+  ],
+  "keywords": [],
+  "tags": {},
+  "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x79C5a1Ae586322A07BfB60be36E1b31CE8C84A1e/logo.png"
+}
