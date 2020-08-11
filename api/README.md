@@ -2,6 +2,12 @@
 
 > API for Interacting with $EDI Token
 
+## Setup
+
+- valid Etherscan.io API Key
+- Infura API Key
+
+
 ## Overview
 
 * Exchanges 
