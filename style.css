@@ -1,0 +1,154 @@
+body {
+  font-family: 'Lato', sans-serif;
+  height: 100vh;
+  display: grid;
+  background: #8354e0;
+}
+body > * {
+  margin: auto;
+}
+
+h1 {
+  font-weight: 100;
+  color: white;
+  margin-top: 5rem;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotateX(50deg) rotateZ(0deg) translateZ(-0.5rem);
+            transform: rotateX(50deg) rotateZ(0deg) translateZ(-0.5rem);
+  }
+  50% {
+    -webkit-transform: rotateX(50deg) rotateZ(180deg) translateZ(0.5rem);
+            transform: rotateX(50deg) rotateZ(180deg) translateZ(0.5rem);
+  }
+  to {
+    -webkit-transform: rotateX(50deg) rotateZ(360deg) translateZ(-0.5rem);
+            transform: rotateX(50deg) rotateZ(360deg) translateZ(-0.5rem);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotateX(50deg) rotateZ(0deg) translateZ(-0.5rem);
+            transform: rotateX(50deg) rotateZ(0deg) translateZ(-0.5rem);
+  }
+  50% {
+    -webkit-transform: rotateX(50deg) rotateZ(180deg) translateZ(0.5rem);
+            transform: rotateX(50deg) rotateZ(180deg) translateZ(0.5rem);
+  }
+  to {
+    -webkit-transform: rotateX(50deg) rotateZ(360deg) translateZ(-0.5rem);
+            transform: rotateX(50deg) rotateZ(360deg) translateZ(-0.5rem);
+  }
+}
+.wrapper {
+  margin-bottom: 0;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  width: 3.75rem;
+  height: 3.75rem;
+  -webkit-transform-origin: 1.875rem 1.875rem;
+          transform-origin: 1.875rem 1.875rem;
+  -webkit-transform: rotateX(50deg) rotateZ(45deg);
+          transform: rotateX(50deg) rotateZ(45deg);
+  -webkit-animation: rotate 4s linear infinite;
+          animation: rotate 4s linear infinite;
+}
+.wrapper:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.pyramid {
+  position: absolute;
+  -webkit-perspective: 500px;
+          perspective: 500px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.pyramid.inverse {
+  -webkit-transform: translateZ(-0.7142857143rem) rotateY(180deg);
+          transform: translateZ(-0.7142857143rem) rotateY(180deg);
+}
+
+.square {
+  width: 3.75rem;
+  height: 3.75rem;
+  background: #d2c0f4;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.triangle {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+}
+.triangle:nth-child(1) {
+  width: 3.75rem;
+  top: -33%;
+  background: #f1ecfb;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  -webkit-transform: rotateX(-68deg);
+          transform: rotateX(-68deg);
+}
+.triangle:nth-child(2) {
+  width: 3.75rem;
+  background: #f1ecfb;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+          clip-path: polygon(50% 100%, 0 0, 100% 0);
+  -webkit-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+  -webkit-transform: rotateX(68deg);
+          transform: rotateX(68deg);
+}
+.triangle:nth-child(3) {
+  height: 3.75rem;
+  left: -33%;
+  background: white;
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+  -webkit-clip-path: polygon(100% 100%, 0 50%, 100% 0);
+          clip-path: polygon(100% 100%, 0 50%, 100% 0);
+  -webkit-transform: rotateY(68deg);
+          transform: rotateY(68deg);
+}
+.triangle:nth-child(4) {
+  height: 3.75rem;
+  background: white;
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-clip-path: polygon(0 100%, 100% 50%, 0 0);
+          clip-path: polygon(0 100%, 100% 50%, 0 0);
+  -webkit-transform: rotateY(-68deg);
+          transform: rotateY(-68deg);
+}
+
+.other-pens {
+  position: absolute;
+  bottom: 1rem;
+}
+.other-pens strong {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+.other-pens li, .other-pens a, .other-pens strong {
+  color: rgba(255, 255, 255, 0.8);
+}
+.other-pens ul {
+  list-style: none;
+  padding: 0;
+  margin-left: .8rem;
+}
+.other-pens a {
+  display: block;
+  padding: .4rem;
+}
